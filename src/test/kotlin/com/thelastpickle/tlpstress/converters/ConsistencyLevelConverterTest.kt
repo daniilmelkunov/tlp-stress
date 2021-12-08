@@ -1,11 +1,11 @@
 package com.thelastpickle.tlpstress.converters
 
-import com.datastax.driver.core.ConsistencyLevel
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
+import shaded.com.scylladb.cdc.driver3.driver.core.ConsistencyLevel
 
 import kotlin.test.assertFailsWith
 

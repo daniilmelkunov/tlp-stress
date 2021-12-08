@@ -1,7 +1,7 @@
 package com.thelastpickle.tlpstress
 
-import com.datastax.driver.core.Host
-import com.google.common.base.Predicate
+import shaded.com.scylladb.cdc.driver3.common.base.Predicate
+import shaded.com.scylladb.cdc.driver3.driver.core.Host
 
 class CoordinatorHostPredicate : Predicate<Host> {
     override fun apply(input: Host?): Boolean {

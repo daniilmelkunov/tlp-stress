@@ -1,13 +1,13 @@
 package com.thelastpickle.tlpstress.profiles
 
-import com.datastax.driver.core.PreparedStatement
-import com.datastax.driver.core.Session
 import com.thelastpickle.tlpstress.PartitionKey
 import com.thelastpickle.tlpstress.StressContext
 import com.thelastpickle.tlpstress.generators.*
 import com.thelastpickle.tlpstress.generators.functions.FirstName
 import com.thelastpickle.tlpstress.generators.functions.LastName
 import com.thelastpickle.tlpstress.generators.functions.USCities
+import shaded.com.scylladb.cdc.driver3.driver.core.PreparedStatement
+import shaded.com.scylladb.cdc.driver3.driver.core.Session
 import java.util.concurrent.ThreadLocalRandom
 
 class MaterializedViews : IStressProfile {

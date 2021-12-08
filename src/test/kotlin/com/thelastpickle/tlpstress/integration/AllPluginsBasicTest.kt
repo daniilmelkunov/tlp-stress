@@ -1,12 +1,12 @@
 package com.thelastpickle.tlpstress.integration
 
-import com.datastax.driver.core.Cluster
 import com.thelastpickle.tlpstress.Plugin
 import com.thelastpickle.tlpstress.commands.Run
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.MethodSource
+import shaded.com.scylladb.cdc.driver3.driver.core.Cluster
 
 
 @Retention(AnnotationRetention.RUNTIME)

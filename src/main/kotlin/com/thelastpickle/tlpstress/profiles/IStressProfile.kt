@@ -1,14 +1,14 @@
 package com.thelastpickle.tlpstress.profiles
 
-import com.datastax.driver.core.Session
-import com.datastax.driver.core.BoundStatement
-import com.datastax.driver.core.ResultSet
 import com.thelastpickle.tlpstress.PartitionKey
 import com.thelastpickle.tlpstress.PopulateOption
 import com.thelastpickle.tlpstress.StressContext
 import com.thelastpickle.tlpstress.commands.Run
 import com.thelastpickle.tlpstress.generators.FieldGenerator
 import com.thelastpickle.tlpstress.generators.Field
+import shaded.com.scylladb.cdc.driver3.driver.core.BoundStatement
+import shaded.com.scylladb.cdc.driver3.driver.core.ResultSet
+import shaded.com.scylladb.cdc.driver3.driver.core.Session
 
 interface IStressRunner {
     fun getNextMutation(partitionKey: PartitionKey) : Operation

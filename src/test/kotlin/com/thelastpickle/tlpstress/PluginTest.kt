@@ -1,7 +1,5 @@
 package com.thelastpickle.tlpstress
 
-import com.datastax.driver.core.BoundStatement
-import com.datastax.driver.core.Session
 import com.thelastpickle.tlpstress.profiles.IStressProfile
 import com.thelastpickle.tlpstress.profiles.IStressRunner
 import com.thelastpickle.tlpstress.profiles.Operation
@@ -11,6 +9,8 @@ import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatExceptionOfType
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import shaded.com.scylladb.cdc.driver3.driver.core.BoundStatement
+import shaded.com.scylladb.cdc.driver3.driver.core.Session
 
 
 internal class PluginTest {

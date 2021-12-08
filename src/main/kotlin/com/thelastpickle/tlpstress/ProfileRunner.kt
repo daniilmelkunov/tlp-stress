@@ -1,10 +1,10 @@
 package com.thelastpickle.tlpstress
 
-import com.google.common.util.concurrent.Futures
 import com.thelastpickle.tlpstress.profiles.IStressProfile
 import com.thelastpickle.tlpstress.profiles.IStressRunner
 import com.thelastpickle.tlpstress.profiles.Operation
 import org.apache.logging.log4j.kotlin.logger
+import shaded.com.scylladb.cdc.driver3.common.util.concurrent.Futures
 import java.time.LocalDateTime
 import java.util.concurrent.Semaphore
 import java.util.concurrent.ThreadLocalRandom

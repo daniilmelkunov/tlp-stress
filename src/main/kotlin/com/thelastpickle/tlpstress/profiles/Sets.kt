@@ -1,12 +1,12 @@
 package com.thelastpickle.tlpstress.profiles
 
-import com.datastax.driver.core.PreparedStatement
-import com.datastax.driver.core.Session
 import com.thelastpickle.tlpstress.PartitionKey
 import com.thelastpickle.tlpstress.StressContext
 import com.thelastpickle.tlpstress.generators.Field
 import com.thelastpickle.tlpstress.generators.FieldGenerator
 import com.thelastpickle.tlpstress.generators.functions.Random
+import shaded.com.scylladb.cdc.driver3.driver.core.PreparedStatement
+import shaded.com.scylladb.cdc.driver3.driver.core.Session
 
 class Sets : IStressProfile {
 

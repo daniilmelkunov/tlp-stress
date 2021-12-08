@@ -1,14 +1,14 @@
 package com.thelastpickle.tlpstress.profiles
 
-import com.datastax.driver.core.PreparedStatement
-import com.datastax.driver.core.Session
-import com.datastax.driver.core.VersionNumber
-import com.datastax.driver.core.utils.UUIDs
 import com.thelastpickle.tlpstress.PartitionKey
 import com.thelastpickle.tlpstress.StressContext
 import com.thelastpickle.tlpstress.WorkloadParameter
 import com.thelastpickle.tlpstress.generators.*
 import com.thelastpickle.tlpstress.generators.functions.Random
+import shaded.com.scylladb.cdc.driver3.driver.core.PreparedStatement
+import shaded.com.scylladb.cdc.driver3.driver.core.Session
+import shaded.com.scylladb.cdc.driver3.driver.core.VersionNumber
+import shaded.com.scylladb.cdc.driver3.driver.core.utils.UUIDs
 import java.lang.UnsupportedOperationException
 import java.sql.Timestamp
 import java.time.LocalDateTime

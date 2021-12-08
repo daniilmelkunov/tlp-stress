@@ -6,10 +6,6 @@ import com.beust.jcommander.Parameters
 import com.beust.jcommander.converters.IParameterSplitter
 import com.codahale.metrics.MetricRegistry
 import com.codahale.metrics.ScheduledReporter
-import com.datastax.driver.core.*
-import com.datastax.driver.core.policies.DCAwareRoundRobinPolicy
-import com.datastax.driver.core.policies.HostFilterPolicy
-import com.datastax.driver.core.policies.RoundRobinPolicy
 import com.google.common.base.Preconditions
 import com.google.common.util.concurrent.RateLimiter
 import com.thelastpickle.tlpstress.*
@@ -22,6 +18,14 @@ import com.thelastpickle.tlpstress.generators.Registry
 import me.tongfei.progressbar.ProgressBar
 import me.tongfei.progressbar.ProgressBarStyle
 import org.apache.logging.log4j.kotlin.logger
+import shaded.com.scylladb.cdc.driver3.driver.core.Cluster
+import shaded.com.scylladb.cdc.driver3.driver.core.ConsistencyLevel
+import shaded.com.scylladb.cdc.driver3.driver.core.HostDistance
+import shaded.com.scylladb.cdc.driver3.driver.core.PoolingOptions
+import shaded.com.scylladb.cdc.driver3.driver.core.QueryOptions
+import shaded.com.scylladb.cdc.driver3.driver.core.policies.DCAwareRoundRobinPolicy
+import shaded.com.scylladb.cdc.driver3.driver.core.policies.HostFilterPolicy
+import shaded.com.scylladb.cdc.driver3.driver.core.policies.RoundRobinPolicy
 import java.io.File
 import java.lang.RuntimeException
 import kotlin.concurrent.fixedRateTimer

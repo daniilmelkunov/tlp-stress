@@ -1,13 +1,13 @@
 package com.thelastpickle.tlpstress.profiles
 
 import com.beust.jcommander.Parameter
-import com.datastax.driver.core.PreparedStatement
-import com.datastax.driver.core.Session
 import com.thelastpickle.tlpstress.PartitionKey
 import com.thelastpickle.tlpstress.StressContext
 import com.thelastpickle.tlpstress.profiles.IStressProfile
 import com.thelastpickle.tlpstress.profiles.IStressRunner
 import com.thelastpickle.tlpstress.profiles.Operation
+import shaded.com.scylladb.cdc.driver3.driver.core.PreparedStatement
+import shaded.com.scylladb.cdc.driver3.driver.core.Session
 
 
 class Maps : IStressProfile {
